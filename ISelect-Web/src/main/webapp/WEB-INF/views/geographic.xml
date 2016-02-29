@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="geo.index" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/admin/geo_index.jsp"></put-attribute>
+    </definition>
+    <definition name="geo.country" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/admin/geo_country_details.jsp"></put-attribute>
+    </definition>
+    
+    <!--State Session-->
+    <definition name="geo.state" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/admin/geo_country_state.jsp"></put-attribute>
+    </definition>
+    <definition name="geo.state.index" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/admin/geo_country_state.jsp"></put-attribute>
+    </definition>
+    
+    
+    <definition name="geo.notfound" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/admin/geo_notfound.jsp"></put-attribute>
+    </definition>
+    
+</tiles-definitions>
